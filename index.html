@@ -18,23 +18,23 @@
             </div>
         </div>
 
-        <form action="">
+        <form action="" method="post">
             <p>Preencha o formulário para<br>receber os detalhes do evento</p>
             <div class="input-group">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">      
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>      
             </div>
             <div class="input-group">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
             </div>
             <div class="input-group">
                 <label for="telefone">Telefone</label>
-                <input type="number" name="telefone" id="telefone" placeholder="Número de Whatsapp">
+                <input type="number" name="telefone" id="telefone" placeholder="Número de WhatsApp" required>
             </div>
             <div class="select-group">
                 <label for="categoria">Principal interesse</label>
-                <select name="categoria" id="categoria">
+                <select name="categoria" id="categoria" required>
                     <option value="">Selecione</option>
                     <option value="moto">Moto</option>
                     <option value="carro">Carro</option>
@@ -46,17 +46,19 @@
     </header>
 
     <main>
-        <section>
-            <h3>Explore a linha de motocicletas:</h3>
+        <section id="explorer">
+            <p class="explorer-title">Explore a linha de motocicletas:</p>
             <div class="card-images">
                 <div class="card-image">
-                    <img src="" alt="">
+                    <img src="img/hd1.jpg" alt="">
                     <p>Criada para aventureiros</p>
+                </div>
                 <div class="card-image">
-                    <img src="" alt="">
+                    <img src="img/hd2.jpg" alt="">
                     <p>Nossos destinos, Nossas regras.</p>
+                </div>
                 <div class="card-image">
-                    <img src="" alt="">
+                    <img src="img/hd3.jpg" alt="">
                     <p>Desejada por todos</p>
                 </div>
             </div>

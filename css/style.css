@@ -119,4 +119,51 @@ body {
             }
         }
     }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        #explorer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .explorer-title {
+                font-size: 1.5rem;
+                color: black;
+                margin-top: 2rem;
+                background-color: grey;
+                width: 90%;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .card-images {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 2rem;
+                gap: 20px;
+                width: 90%;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: black;
+                    margin-top: 0.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
