@@ -165,5 +165,16 @@ body {
                 }
             }
         }
+
+        #local {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(#00000070, #00000070), url(../img/moto2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
