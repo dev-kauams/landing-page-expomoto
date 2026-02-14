@@ -140,6 +140,7 @@ body {
                 width: 90%;
                 text-align: center;
                 padding: 1rem;
+                border-radius: 5px;
             }
 
             .card-images {
@@ -168,13 +169,175 @@ body {
 
         #local {
             width: 100%;
+            margin-top: 4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: linear-gradient(#00000070, #00000070), url(../img/moto2.jpg);
+            background-image: linear-gradient(#00000090, #00000090), url(../img/moto2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            gap: 20px;
+            color: white;
+
+            img {
+                object-fit: fill;
+                width: 50px;
+                height: 50px;
+                image-rendering: high-quality;
+                margin-top: 20px    ;
+            }
+
+            p {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            .texto-destaque {
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: orangered;
+                margin: 10px 0 10px 0;
+            }
+
+            p:last-child {
+                font-size: 1rem;
+                color: white;
+                margin-bottom: 20px;
+            }
+        }
+
+        #modelos {
+            width: 100%;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .modelos-flex {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                #modelos-text-one {
+                    font-size: 1.9rem;
+                    width: 60%;
+                    color: black;
+                    font-weight: bold;
+                    text-align: left;
+                    margin-left: 20px;
+                }
+
+                .modelos-list {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    width: 60%;
+                    flex-wrap: nowrap;
+
+
+                    p {
+                        font-size: 1.6rem;
+                        color: black;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+    
+                    ul {
+                        font-size: 1rem;
+                        color: black;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .footer-solicitacion-texts {
+            background-image: linear-gradient(#000000d0, #000000d0), url(../img/moto6.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 20px;
+
+            p {
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            a {
+                padding: 0.6rem 1.2rem;
+                border-radius: 5px;
+                border: none;
+                background-color: orangered;
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: darkorange;
+                }
+            }
+        }
+
+        .footer-info-texts {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 10px;
+
+
+            p:first-child {
+                font-size: 1.6rem;
+                color: black;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: black;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: orangered;
+                    }
+                }
+            }
         }
     }
 }
