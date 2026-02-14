@@ -362,3 +362,197 @@ body {
         }
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        header {
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+
+            .header-texts {
+                margin: 0;
+                align-items: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.6rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                .header-info-date {
+                    font-size: 0.9rem;
+                }
+            }
+
+            form {
+                width: 100%;
+                margin: 0;
+                padding: 1.5rem;
+                gap: 15px;
+
+                .input-group,
+                .select-group {
+                    input,
+                    select {
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    font-size: 1rem;
+                    padding: 0.8rem;
+                }
+            }
+        }
+
+        main {
+            #explorer {
+                .card-images {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card-image {
+                        img {
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+
+            #modelos {
+                .modelos-flex {
+                    flex-direction: column;
+                    gap: 20px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    #modelos-text-one, .modelos-list {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0;
+
+                        p {
+                            text-align: center;
+                        }
+
+                        ul {
+                            padding: 0;
+
+                            li {
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #local {
+                padding: 20px;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .texto-destaque {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        footer {
+            .footer-solicitacion-texts {
+                padding: 1.5rem;
+
+                p {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
+                a {
+                    font-size: 1rem;
+                    padding: 1rem;
+                }
+            }
+
+            .footer-info-texts {
+                padding: 1.5rem;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        header {
+            .header-texts {
+                margin-right: 20px;
+                h1 {
+                    font-size: 2rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+
+            form {
+                width: 80%;
+                margin-top: 1rem;
+                gap: 10px;
+
+                input, select {
+                    width: 100%;
+                }
+            }
+        }
+
+        main {
+            #modelos {
+                .modelos-flex {
+                    flex-direction: column;
+
+                    &:nth-child(2) {
+                        flex-direction: column-reverse;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    #modelos-text-one, .modelos-list {
+                        width: 50%;
+                        margin: 20px 0 20px 0;
+                        text-align: center;
+
+                        p {
+                            text-align: center;
+                        }
+
+                        li {
+                            list-style: none;
+                            font-weight: bold;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
