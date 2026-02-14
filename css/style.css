@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,18 @@
     scroll-behavior: smooth;
 }
 
+:root {
+  --primary: #fa6600;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
 body {
     width: 100%;
     height: 100dvh;
+    font-family: "Montserrat", sans-serif;
 
     header {
         width: 100%;
@@ -27,23 +38,23 @@ body {
 
             h1 {
                 font-size: 3rem;
-                color: orangered;
+                color: var(--primary);
                 margin-bottom: 1rem;
                 font-weight: bold;
             }
 
             h2 {
                 font-size: 1.5rem;
-                color: white;
+                color: var(--text-color);
             }
 
             .header-info-date{
                 font-size: 1.2rem;
-                color: white;
+                color: var(--text-color);
                 margin-top: 0.5rem;
 
                 :nth-child(2) {
-                    color: orangered;
+                    color: var(--primary);
                     font-weight: bold;
                 } 
             }
@@ -52,8 +63,8 @@ body {
         form {
             display: flex;
             flex-direction: column;
-            gap: 30px;
-            background-color: gray;
+            gap: 20px;
+            background-color: var(--secondary);
             height: auto;
             padding: 2rem;
             border-radius: 10px;
@@ -61,7 +72,7 @@ body {
 
             p {
                 font-size: 1.5rem;
-                color: black;
+                color: var(--text-secondary);
                 margin-bottom: 0.5rem;
             }
 
@@ -72,7 +83,7 @@ body {
 
                 label {
                     font-size: 1.2rem;
-                    color: black;
+                    color: var(--text-tertiary);
                     margin-bottom: 0.5rem;
                 }
 
@@ -90,7 +101,7 @@ body {
 
                 label {
                     font-size: 1.2rem;
-                    color: black;
+                    color: var(--text-tertiary);
                     margin-bottom: 0.5rem;
                 }
 
@@ -105,13 +116,14 @@ body {
 
             button {
                 width: 100%;
-                padding: 0.6rem;
-                border-radius: 5px;
+                padding: 1rem 1.2rem;
+                border-radius: 35px;
                 border: none;
-                background-color: orangered;
-                color: white;
+                background-color: var(--primary);
+                color: var(--text-color);
                 font-size: 1.2rem;
                 cursor: pointer;
+                transition: all 0.3s ease;
 
                 &:hover {
                     background-color: darkorange;
@@ -134,9 +146,9 @@ body {
 
             .explorer-title {
                 font-size: 1.5rem;
-                color: black;
+                color: var(--text-secondary);
                 margin-top: 2rem;
-                background-color: grey;
+                background-color: var(--secondary);
                 width: 90%;
                 text-align: center;
                 padding: 1rem;
@@ -147,22 +159,29 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                flex-wrap: wrap;
                 margin-top: 2rem;
                 gap: 20px;
                 width: 90%;
 
-                img {
-                    width: 250px;
-                    height: 250px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                }
+                .card-image {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-                p {
-                    font-size: 1.2rem;
-                    color: black;
-                    margin-top: 0.5rem;
-                    text-align: center;
+                    img {
+                        width: 250px;
+                        height: 250px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        color: var(--text-secondary);
+                        margin-top: 0.5rem;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -173,19 +192,19 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: linear-gradient(#00000090, #00000090), url(../img/moto2.jpg);
+            background-image: linear-gradient(#000000d1, #000000d1), url(../img/moto2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             gap: 20px;
-            color: white;
+            color: var(--text-color);
 
             img {
                 object-fit: fill;
                 width: 50px;
                 height: 50px;
                 image-rendering: high-quality;
-                margin-top: 20px    ;
+                margin-top: 20px;
             }
 
             p {
@@ -196,13 +215,13 @@ body {
             .texto-destaque {
                 font-size: 1.6rem;
                 font-weight: bold;
-                color: orangered;
+                color: var(--primary);
                 margin: 10px 0 10px 0;
             }
 
             p:last-child {
                 font-size: 1rem;
-                color: white;
+                color: var(--text-color);
                 margin-bottom: 20px;
             }
         }
@@ -221,16 +240,16 @@ body {
                 align-items: center;
 
                 img {
-                    width: 40%;
-                    height: 250px;
+                    width: 45%;
+                    height: 300px;
                     object-fit: cover;
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
 
                 #modelos-text-one {
-                    font-size: 1.9rem;
-                    width: 60%;
-                    color: black;
+                    font-size: 1.6rem;
+                    width: 55%;
+                    color: var(--text-secondary);
                     font-weight: bold;
                     text-align: left;
                     margin-left: 20px;
@@ -240,20 +259,20 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: start;
-                    width: 60%;
+                    width: 55%;
                     flex-wrap: nowrap;
 
 
                     p {
                         font-size: 1.6rem;
-                        color: black;
+                        color: var(--text-secondary);
                         font-weight: bold;
                         text-align: left;
                     }
     
                     ul {
                         font-size: 1rem;
-                        color: black;
+                        color: var(--text-secondary);
                         margin-top: 1rem;
                         display: flex;
                         flex-direction: column;
@@ -268,7 +287,7 @@ body {
 
     footer {
         width: 100%;
-        background-color: grey;
+        background-color: var(--secondary);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -290,17 +309,18 @@ body {
 
             p {
                 font-size: 1.5rem;
-                color: white;
+                color: var(--text-color);
             }
 
             a {
-                padding: 0.6rem 1.2rem;
-                border-radius: 5px;
+                padding: 1.3rem 1.2rem;
+                border-radius: 35px;
                 border: none;
-                background-color: orangered;
-                color: white;
+                background-color: var(--primary);
+                color: var(--text-color);
                 font-size: 1.2rem;
                 text-decoration: none;
+                transition: all 0.3s ease;
 
                 &:hover {
                     background-color: darkorange;
@@ -320,21 +340,22 @@ body {
 
             p:first-child {
                 font-size: 1.6rem;
-                color: black;
+                color: var(--text-secondary);
                 font-weight: bold;
             }
 
             p {
                 font-size: 1.2rem;
-                color: black;
+                color: var(--text-secondary);
                 text-align: center;
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: var(--text-secondary);
+                    transition: all 0.1s ease;
 
                     &:hover {
-                        color: orangered;
+                        color: var(--primary);
                     }
                 }
             }
